@@ -1,3 +1,16 @@
-body, html {
-	background-color: #EDEDED !important;
+
+.line-space{
+	white-space: pre-line;
+}
+
+.m-top-40{
+	margin-top: 40px;
+}
+
+.m-top-45{
+	margin-top: 45px;
+}
+
+.m-bottom-20{
+	margin-bottom: 20px;
 }
