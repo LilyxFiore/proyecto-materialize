@@ -1,3 +1,17 @@
 body, html {
 	background-color: #EDEDED !important;
 }
+
+h2,h5{
+	text-transform: uppercase;
+}
+hr{
+	width: 30px;
+}
+img{
+	max-height: 170px;
+	max-width: 255px;
+}
+/*.portafolio{
+	display: flex;
+}*/
