@@ -20,6 +20,7 @@ return true;
     return false;
   }
 };
+
 nombre.onkeypress=validaLetras;
 apellido.onkeypress=validaLetras;
 nombre.onblur=typeOracion;
