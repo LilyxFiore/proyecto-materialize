@@ -10,26 +10,23 @@ hr{
 	width: 40px;
 }
 
-.footer-bg{
-	padding-top: 20px;
-	background-color: #7B979D;
-	color: #fff;
-	padding: 20px 0;
-	font-weight: 300;
-}
-
-header{
+.bg-imagen{
 	background-image: url(../img/bg.jpg);
 	width: 100%;
-	height: 800px;
+	height: 670px;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-header .font{
-	font-size: 70px;
-	color: #fff;
+.text-header{
+	font-size: 5em;
+	font-weight: bold;
+	flex-direction: column;
 }
 
-.row a{
-	margin-top: 400px;
+.footer-bg{
+	padding-top: 20px;
+	padding: 20px 0;
+	font-weight: 300;
 }
