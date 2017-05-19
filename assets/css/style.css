@@ -11,25 +11,3 @@ hr{
 .row{
 	margin: 0px !important;
 }
-
-img{
-	height: 100%;
-	width: 100%;
-	
-}
-/*.portafolio{
-	display: flex;
-}*/
-
-/*.style-modal{
-	background-color: white;
-	display:none;
-	position: fixed;
-	z-index: 1;
-	padding-top: 30px;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-}*/
