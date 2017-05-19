@@ -11,3 +11,11 @@ hr{
 .row{
 	margin: 0px !important;
 }
+
+.footer-bg{
+	padding-top: 20px;
+	background-color: #4595A6;
+	color: #fff;
+	padding: 20px 0;
+	font-weight: 300;
+}
