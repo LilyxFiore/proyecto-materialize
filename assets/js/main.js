@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+=======
 
 var nombre=document.getElementById("first_name");
 var apellido=document.getElementById("last_name");
@@ -25,3 +30,4 @@ nombre.onkeypress=validaLetras;
 apellido.onkeypress=validaLetras;
 nombre.onblur=typeOracion;
 apellido.onblur=typeOracion;
+>>>>>>> 9bac5bec8b6db18efd28b7d2ae739c985b2e503c
