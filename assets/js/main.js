@@ -5,29 +5,30 @@ $(document).ready(function(){
 
 
 //js para validar formulario **//
-var nombre=document.getElementById("first_name");
-var apellido=document.getElementById("last_name");
-function typeOracion(){
-  if(this.getAttribute("type")=="text"){
-     var arrDato=this.value.split(" ");
-     var datoConMayuscula="";
-     for (var i = 0; i < arrDato.length; i++) {
-       datoConMayuscula+=arrDato[i].charAt(0).toUpperCase()+ arrDato[i].substring(1).toLowerCase() + " " ;
-     }
-     this.value=datoConMayuscula;
-   }
-}
+var form = document.getElementById("form");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  var name = document.getElementById("first_name");
+  var last_name = document.getElementById("last_name");
+  var email = document.getElementById("email");
+  var message = document.getElementById("message");
 
-var validaLetras=function(e){
-  var codigoTecla=e.keyCode;
-  if ((codigoTecla>=97 && codigoTecla <=122)|| (codigoTecla>=65 && codigoTecla <= 90) || codigoTecla==32 || codigoTecla==39) {
-return true;
-  }else {
+  validateNull(name, last_name, email, message);
+  this.reset();
+});
+
+function validateNull(name, last_name, email, message){
+  /** Validacion para nombre**/
+  if(name.value.trim().length==0 || last_name.value.trim().length==0 || email.value.trim().length==0 || message.value.trim().length==0){
     return false;
   }
-};
 
-nombre.onkeypress=validaLetras;
-apellido.onkeypress=validaLetras;
-nombre.onblur=typeOracion;
-apellido.onblur=typeOracion;
+  if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+(\w{2,4})+$/.test(email.value))){
+    return false;
+  }
+
+  else{
+    alert("Sus datos han sido registrados correctamente");
+  }
+
+}

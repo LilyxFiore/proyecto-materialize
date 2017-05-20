@@ -14,19 +14,18 @@
     <link rel="stylesheet" href="assets/css/materialize.css">
   </head>
   <body>
-  	<header class="bg-imagen valign-wrapper">
+  	<section id="main" class="valign-wrapper">
   		<div class="container">
-  			<div class="row text-header white-text">
-  				<div class="col s12 m12 center-align">
-  					NOMBRE APELLIDO
+  			<div class="row white-text center-align">
+  				<div class="col s12">
+  					<h1><b>NOMBRE APELLIDO</b></h1>
   				</div>
-  			</div>
-
-  			<div class="row">
-  				<a class="col s8 m6 l4 offset-l4 offset-m3 offset-s2 waves-effect waves-light btn white black-text" href="#!">WEB AND MOVIL DEVELOPER</a>
-  			</div>
+          <div class="col s12">
+            <a class="btn large waves-effect waves-dark white black-text" href="#!">WEB AND MOVIL DEVELOPER</a>
+          </div>
+  		  </div>
   		</div>
-  	</header>
+  	</section>
 
     <!-- section about me-->
     <section id="about" class="grey lighten-3 center-align">
@@ -100,21 +99,15 @@
   				<div class="col s12">
   					<div class="col s4 no-padding">
   						<img  class="materialboxed responsive-img" src="assets/img/desk-book.jpg" alt="escritorio">
+              <img class="materialboxed responsive-img" src="assets/img/girl-code.jpg" alt="girl-code">
   					</div>
   					<div class="col s4 no-padding">
   						<img class="materialboxed responsive-img" src="assets/img/consola.jpg" alt="consola">
+              <img class=" materialboxed responsive-img" src="assets/img/desk-code.jpg" alt="desk-code">
   					</div>
   					<div class="col s4 no-padding">
   						<img class="materialboxed responsive-img" src="assets/img/code.jpg" alt="code">
-  					</div>
-            <div class="col s4 no-padding">
-  						<img class="materialboxed responsive-img" src="assets/img/girl-code.jpg" alt="girl-code">
-  					</div>
-  					<div class="col s4 no-padding">
-  						<img  class=" materialboxed responsive-img" src="assets/img/desk-code.jpg" alt="desk-code">
-  					</div>
-  					<div class="col s4 no-padding">
-  						<img class=" materialboxed responsive-img" src="assets/img/img-1.jpg" alt="florero">
+              <img class=" materialboxed responsive-img" src="assets/img/img-1.jpg" alt="florero">
   					</div>
   				</div>
         </div>
@@ -134,7 +127,7 @@
 
         <div class="row">
           <div class="col s12 m6">
-            <form onsubmit="return false">
+            <form id="form">
               <div class="row">
                 <div class="input-field col s6">
                   <input id="first_name" type="text" class="validate" required>
@@ -153,8 +146,8 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea" required></textarea>
-                  <label for="textarea1">Your Mesagge</label>
+                  <textarea id="message" class="materialize-textarea validate" required></textarea>
+                  <label for="message">Your Mesagge</label>
                 </div>
               </div>
               <div class="row">
@@ -176,9 +169,9 @@
       </div>
     </section>
 
-    <footer>
-    	<div class="footer-copyright footer-bg blue-grey lighten-1">
-    		<div class="container white-text">
+    <footer class="blue-grey lighten-1">
+    	<div class="container footer-copyright ">
+    		<div class="white-text">
           &copy; 2017 Copyright Text
     			<a class="white-text right" href="#!">autor@hotmail.com</a>
     		</div>
