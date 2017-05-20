@@ -1,14 +1,8 @@
-section{
-	padding: 80px 0;
-}
+section{ padding: 80px 0;}
 
-h5{
-	padding: 26px 0 40px 0;
-}
+h5{	padding: 26px 0 40px 0;}
 
-hr{
-	width: 40px;
-}
+hr{ 	width: 40px;}
 
 #main{
 	background: url(../img/bg.jpg) no-repeat center;
@@ -16,13 +10,9 @@ hr{
 	height: 100vh;
 }
 
-footer{
-	padding: 20px;
-}
+#first_name, #last_name{	text-transform: capitalize;}
 
-#first_name, #last_name{
-	text-transform: capitalize;
-}
+footer{ padding: 20px;}
 
 @media (max-width: 600px){
 	#main{

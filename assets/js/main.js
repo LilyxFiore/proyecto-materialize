@@ -18,7 +18,7 @@ form.addEventListener("submit", function(event) {
 });
 
 function validateNull(name, last_name, email, message){
-  /** Validacion para nombre**/
+  /** Validacion para campos vacíos**/
   if(name.value.trim().length==0 || last_name.value.trim().length==0 || email.value.trim().length==0 || message.value.trim().length==0){
     return false;
   }
@@ -27,8 +27,5 @@ function validateNull(name, last_name, email, message){
     return false;
   }
 
-  else{
-    alert("Sus datos han sido registrados correctamente");
-  }
-
+  else{ alert("Sus datos han sido registrados correctamente");  }
 }
